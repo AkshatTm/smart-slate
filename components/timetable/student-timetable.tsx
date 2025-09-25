@@ -2,7 +2,6 @@
 
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import React from "react";
 
 interface TimeSlot {
   id: string;
@@ -41,7 +40,7 @@ const timetableData: TimetableData = {
       room: "Lab B",
       teacher: "Dr. Wilson",
       color: "bg-purple-100 text-purple-800 border-purple-200",
-      time: "13:00",
+      time: "14:00",
     },
     {
       id: "4",
@@ -51,42 +50,26 @@ const timetableData: TimetableData = {
       color: "bg-orange-100 text-orange-800 border-orange-200",
       time: "15:00",
     },
-    {
-      id: "5",
-      subject: "Art",
-      room: "Art Studio",
-      teacher: "Ms. Garcia",
-      color: "bg-pink-100 text-pink-800 border-pink-200",
-      time: "16:00",
-    },
   ],
   Tuesday: [
     {
-      id: "6",
+      id: "5",
       subject: "Chemistry",
       room: "Lab A",
       teacher: "Dr. Smith",
       color: "bg-red-100 text-red-800 border-red-200",
-      time: "09:00",
+      time: "10:00",
     },
     {
-      id: "7",
+      id: "6",
       subject: "Mathematics",
       room: "Room 101",
       teacher: "Mr. Johnson",
       color: "bg-blue-100 text-blue-800 border-blue-200",
-      time: "10:00",
-    },
-    {
-      id: "8",
-      subject: "Biology",
-      room: "Lab C",
-      teacher: "Dr. Anderson",
-      color: "bg-emerald-100 text-emerald-800 border-emerald-200",
       time: "12:00",
     },
     {
-      id: "9",
+      id: "7",
       subject: "Physical Education",
       room: "Gymnasium",
       teacher: "Coach Miller",
@@ -94,17 +77,17 @@ const timetableData: TimetableData = {
       time: "14:00",
     },
     {
-      id: "10",
-      subject: "Computer Science",
-      room: "Computer Lab",
-      teacher: "Mr. Lee",
-      color: "bg-indigo-100 text-indigo-800 border-indigo-200",
-      time: "15:00",
+      id: "8",
+      subject: "Art",
+      room: "Art Studio",
+      teacher: "Ms. Garcia",
+      color: "bg-pink-100 text-pink-800 border-pink-200",
+      time: "16:00",
     },
   ],
   Wednesday: [
     {
-      id: "11",
+      id: "9",
       subject: "Biology",
       room: "Lab C",
       teacher: "Dr. Anderson",
@@ -112,7 +95,7 @@ const timetableData: TimetableData = {
       time: "09:00",
     },
     {
-      id: "12",
+      id: "10",
       subject: "English",
       room: "Room 203",
       teacher: "Ms. Davis",
@@ -120,33 +103,17 @@ const timetableData: TimetableData = {
       time: "11:00",
     },
     {
-      id: "13",
+      id: "11",
       subject: "Mathematics",
       room: "Room 101",
       teacher: "Mr. Johnson",
       color: "bg-blue-100 text-blue-800 border-blue-200",
       time: "13:00",
     },
-    {
-      id: "14",
-      subject: "Geography",
-      room: "Room 208",
-      teacher: "Mr. Taylor",
-      color: "bg-teal-100 text-teal-800 border-teal-200",
-      time: "14:00",
-    },
-    {
-      id: "15",
-      subject: "Music",
-      room: "Music Room",
-      teacher: "Ms. Wilson",
-      color: "bg-purple-100 text-purple-800 border-purple-200",
-      time: "16:00",
-    },
   ],
   Thursday: [
     {
-      id: "16",
+      id: "12",
       subject: "Physics",
       room: "Lab B",
       teacher: "Dr. Wilson",
@@ -154,41 +121,25 @@ const timetableData: TimetableData = {
       time: "10:00",
     },
     {
-      id: "17",
-      subject: "Chemistry",
-      room: "Lab A",
-      teacher: "Dr. Smith",
-      color: "bg-red-100 text-red-800 border-red-200",
-      time: "11:00",
-    },
-    {
-      id: "18",
+      id: "13",
       subject: "Geography",
       room: "Room 208",
       teacher: "Mr. Taylor",
       color: "bg-teal-100 text-teal-800 border-teal-200",
-      time: "13:00",
+      time: "12:00",
     },
     {
-      id: "19",
-      subject: "Literature",
-      room: "Room 204",
-      teacher: "Ms. White",
-      color: "bg-violet-100 text-violet-800 border-violet-200",
+      id: "14",
+      subject: "Chemistry",
+      room: "Lab A",
+      teacher: "Dr. Smith",
+      color: "bg-red-100 text-red-800 border-red-200",
       time: "15:00",
-    },
-    {
-      id: "20",
-      subject: "Physical Education",
-      room: "Gymnasium",
-      teacher: "Coach Miller",
-      color: "bg-yellow-100 text-yellow-800 border-yellow-200",
-      time: "16:00",
     },
   ],
   Friday: [
     {
-      id: "21",
+      id: "15",
       subject: "Computer Science",
       room: "Computer Lab",
       teacher: "Mr. Lee",
@@ -196,7 +147,7 @@ const timetableData: TimetableData = {
       time: "09:00",
     },
     {
-      id: "22",
+      id: "16",
       subject: "Literature",
       room: "Room 204",
       teacher: "Ms. White",
@@ -204,61 +155,11 @@ const timetableData: TimetableData = {
       time: "11:00",
     },
     {
-      id: "23",
+      id: "17",
       subject: "Mathematics",
       room: "Room 101",
       teacher: "Mr. Johnson",
       color: "bg-blue-100 text-blue-800 border-blue-200",
-      time: "12:00",
-    },
-    {
-      id: "24",
-      subject: "History",
-      room: "Room 105",
-      teacher: "Mr. Brown",
-      color: "bg-orange-100 text-orange-800 border-orange-200",
-      time: "14:00",
-    },
-    {
-      id: "25",
-      subject: "Art",
-      room: "Art Studio",
-      teacher: "Ms. Garcia",
-      color: "bg-pink-100 text-pink-800 border-pink-200",
-      time: "15:00",
-    },
-  ],
-  Saturday: [
-    {
-      id: "26",
-      subject: "Science Project",
-      room: "Lab A",
-      teacher: "Dr. Smith",
-      color: "bg-cyan-100 text-cyan-800 border-cyan-200",
-      time: "10:00",
-    },
-    {
-      id: "27",
-      subject: "Math Workshop",
-      room: "Room 101",
-      teacher: "Mr. Johnson",
-      color: "bg-blue-100 text-blue-800 border-blue-200",
-      time: "11:00",
-    },
-    {
-      id: "28",
-      subject: "Study Hall",
-      room: "Library",
-      teacher: "Ms. Roberts",
-      color: "bg-gray-100 text-gray-800 border-gray-200",
-      time: "13:00",
-    },
-    {
-      id: "29",
-      subject: "Sports Club",
-      room: "Gymnasium",
-      teacher: "Coach Miller",
-      color: "bg-green-100 text-green-800 border-green-200",
       time: "14:00",
     },
   ],
@@ -276,14 +177,7 @@ const timeSlots = [
   "17:00",
 ];
 
-const days = [
-  "Monday",
-  "Tuesday",
-  "Wednesday",
-  "Thursday",
-  "Friday",
-  "Saturday",
-];
+const days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"];
 
 export default function StudentTimetable() {
   const getClassForTimeSlot = (day: string, time: string) => {
@@ -292,9 +186,9 @@ export default function StudentTimetable() {
   };
 
   return (
-    <Card className="p-6 bg-white/95 backdrop-blur-sm shadow-xl border-0 hover:shadow-2xl transition-all duration-300">
+    <Card className="p-6 bg-white">
       <div className="mb-6">
-        <h2 className="text-xl font-semibold bg-gradient-to-r from-gray-800 to-gray-600 bg-clip-text text-transparent">
+        <h2 className="text-xl font-semibold text-gray-900">
           My Weekly Schedule
         </h2>
         <p className="text-sm text-gray-500 mt-1">
@@ -303,48 +197,42 @@ export default function StudentTimetable() {
       </div>
 
       <div className="overflow-x-auto">
-        <div className="grid grid-cols-7 gap-px bg-gradient-to-br from-gray-100 to-gray-200 rounded-lg overflow-hidden min-w-[900px] shadow-inner">
+        <div className="grid grid-cols-6 gap-px bg-gray-200 rounded-lg overflow-hidden min-w-[800px]">
           {/* Header */}
-          <div className="bg-gradient-to-br from-slate-50 to-gray-100 p-3 font-semibold text-gray-700 border-b border-gray-200">
-            Time
-          </div>
+          <div className="bg-gray-50 p-3 font-medium text-gray-700">Time</div>
           {days.map((day) => (
             <div
               key={day}
-              className="bg-gradient-to-br from-slate-50 to-gray-100 p-3 font-semibold text-gray-700 text-center border-b border-gray-200"
+              className="bg-gray-50 p-3 font-medium text-gray-700 text-center"
             >
               {day}
             </div>
           ))}
 
-          {/* Time Slots - FIXED: Added key to React.Fragment */}
+          {/* Time Slots */}
           {timeSlots.map((time) => (
-            <React.Fragment key={`time-slot-${time}`}>
-              <div className="bg-white/90 backdrop-blur-sm p-3 font-medium text-gray-600 text-center border-r border-gray-100/50">
-                <span className="text-sm font-mono">{time}</span>
+            <>
+              <div
+                key={time}
+                className="bg-white p-3 font-medium text-gray-600 text-center"
+              >
+                {time}
               </div>
               {days.map((day) => {
                 const classData = getClassForTimeSlot(day, time);
                 return (
-                  <div
-                    key={`${day}-${time}`}
-                    className="bg-white/90 backdrop-blur-sm p-2 h-20 border-r border-gray-50 last:border-r-0"
-                  >
+                  <div key={`${day}-${time}`} className="bg-white p-2 h-20">
                     {classData && (
                       <div
-                        className={`${classData.color} rounded-lg p-2 h-full border-2 transition-all duration-300 hover:shadow-lg hover:scale-105 cursor-pointer group transform-gpu`}
-                        style={{
-                          boxShadow: "0 2px 4px rgba(0,0,0,0.05)",
-                          backdropFilter: "blur(2px)",
-                        }}
+                        className={`${classData.color} rounded-md p-2 h-full border-2 transition-all hover:shadow-md cursor-pointer`}
                       >
-                        <div className="text-xs font-semibold truncate group-hover:font-bold transition-all duration-200">
+                        <div className="text-xs font-semibold truncate">
                           {classData.subject}
                         </div>
-                        <div className="text-xs text-gray-600 truncate mt-0.5 group-hover:text-gray-800 transition-colors">
+                        <div className="text-xs text-gray-600 truncate mt-1">
                           {classData.teacher}
                         </div>
-                        <div className="text-xs text-gray-500 truncate group-hover:text-gray-700 transition-colors">
+                        <div className="text-xs text-gray-500 truncate">
                           {classData.room}
                         </div>
                       </div>
@@ -352,7 +240,7 @@ export default function StudentTimetable() {
                   </div>
                 );
               })}
-            </React.Fragment>
+            </>
           ))}
         </div>
       </div>
